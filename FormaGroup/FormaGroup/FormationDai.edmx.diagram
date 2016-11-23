@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="25e3da6d13cd49a6bcbaa29ac198abb6" Name="Diagram1">
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Candidature" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Equipe" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Evaluation" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Formateur" Width="1.5" PointX="12" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Formation" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Module" Width="1.5" PointX="14.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Note" Width="1.5" PointX="12" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Personne" Width="1.5" PointX="9.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Projet" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Seance" Width="1.5" PointX="16.5" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FormaDaiBd2Model.Session" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_Candidature_Personne" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_Candidature_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_EquipeProjet" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_EvaluationFormateur" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_EvaluationModule" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_EvaluationSession" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_Note_Evaluation" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_PersonneFormateur" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_ProjetFormateur" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_SeanceFormateur" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_FormationSession" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_ModuleSeance" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_Note_Personne" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_ProjetSession" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.FK_SessionSeance" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.Intervenant" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.Membre" ManuallyRouted="false" />
+        <AssociationConnector Association="FormaDaiBd2Model.ModuleFormation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
