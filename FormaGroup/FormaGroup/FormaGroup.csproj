@@ -58,6 +58,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -81,11 +82,17 @@
     <Compile Include="Evaluation.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FenetreAcceuil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FenetreAcceuil.Designer.cs">
+      <DependentUpon>FenetreAcceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FenetreConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FenetreConnect.Designer.cs">
+      <DependentUpon>FenetreConnect.cs</DependentUpon>
     </Compile>
     <Compile Include="Formateur.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
@@ -108,6 +115,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FormationDai.edmx</DependentUpon>
     </Compile>
+    <Compile Include="FormationServices.cs" />
+    <Compile Include="GestionCandidatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCandidatures.Designer.cs">
+      <DependentUpon>GestionCandidatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionFormateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionFormateur.Designer.cs">
+      <DependentUpon>GestionFormateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionFormation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionFormation.Designer.cs">
+      <DependentUpon>GestionFormation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSession.Designer.cs">
+      <DependentUpon>GestionSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Module.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
     </Compile>
@@ -117,6 +149,7 @@
     <Compile Include="Personne.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
     </Compile>
+    <Compile Include="PersonneServices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projet.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
@@ -128,6 +161,30 @@
     <Compile Include="Session.cs">
       <DependentUpon>FormationDai.tt</DependentUpon>
     </Compile>
+    <Compile Include="Trombinoscope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trombinoscope.Designer.cs">
+      <DependentUpon>Trombinoscope.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FenetreAcceuil.resx">
+      <DependentUpon>FenetreAcceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FenetreConnect.resx">
+      <DependentUpon>FenetreConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCandidatures.resx">
+      <DependentUpon>GestionCandidatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionFormateur.resx">
+      <DependentUpon>GestionFormateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionFormation.resx">
+      <DependentUpon>GestionFormation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSession.resx">
+      <DependentUpon>GestionSession.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -137,6 +194,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Trombinoscope.resx">
+      <DependentUpon>Trombinoscope.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="FormationDai.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>FormationDai.Designer.cs</LastGenOutput>
